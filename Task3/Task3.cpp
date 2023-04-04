@@ -30,7 +30,9 @@ std::ostream& operator<<(std::ostream& out, const address& a) {
 int main() {
     std::setlocale(LC_ALL, "Russian");
 
-    address a;
+    address a = { "Воронеж", "Генарала Лизюкова", 4, 1, 394077 };
+    std::cout << a << std::endl;
+
     a.city = "Москва";
     a.street = "Арбат";
     a.house = 12;
